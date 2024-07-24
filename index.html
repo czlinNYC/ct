@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/patientList.css" />
+    <script src="./js/functions.js"></script>
+    <title>Tech Care</title>
+  </head>
+  <body>
+    <main>
+      <div id="navbar" height="200">
+        <img
+          class="menu-button-icon"
+          src="./assets/TestLogo.svg"
+          alt="Tech Care's logo"
+        />
+        <div id="menu-container"></div>
+
+        <div id="user-card">
+          <img
+            src="assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+            id="user-portrait"
+          />
+          <div id="user-info">
+            <div id="user-name">Dr. Alaballa Bing Bang</div>
+            <div id="user-profession">Orthopedic Surgeon</div>
+          </div>
+          <img
+            src="./assets/settings_FILL0_wght300_GRAD0_opsz24.svg"
+            id="user-settings"
+            class="user-card-icon"
+          />
+          <img
+            src="./assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
+            id="user-options"
+            class="user-card-icon"
+          />
+        </div>
+      </div>
+      <div id="data-display">
+        <div id="data-first-column">
+          <div id="patients-header">
+            <div class="column-name">Patients</div>
+            <img
+              id="search-icon"
+              src="./assets/search_FILL0_wght300_GRAD0_opsz24.svg"
+            />
+          </div>
+          <div id="patient-list">dep</div>
+        </div>
+        <div id="data-second-column">
+          <div id="diagnosis-history"></div>
+          <div id="diagnosis-list"></div>
+        </div>
+        <div id="data-third-column">
+          <div id="patient-information"></div>
+          <div id="lab-results"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    let username = "coalition";
+    let password = "skills-test";
+    let auth = btoa(`${username}:${password}`);
+    console.log(auth);
+    populateMenu(menuData);
+    // let el = document.getElementById("user-name");
+    // el.innerHTML = name;
+  </script>
+</html>

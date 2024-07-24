@@ -1,0 +1,25 @@
+#data-first-column {
+    width: 357px;
+    height: 1054px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding-top: 28px;
+    padding-bottom: 33px;
+}
+#patients-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.column-name {
+    font-family: 'Manrope-Bold';
+    font-size: 24px;
+}
+#search-icon {
+    align-self: center;
+}
+#patient-list {
+    margin-top: 40px;
+}
